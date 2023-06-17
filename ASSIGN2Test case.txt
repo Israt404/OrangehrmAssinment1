@@ -1,12 +1,12 @@
-
+Project: Fund Transfer Application
+Allow users to transfer funds between their accounts within the same bank.
 Assignment 2.
-
 Test Case:
 Valid:
-1. Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $1. $2 fee per transaction +  no additional fee. Expected=$3 Passed, Actual=$3
-2. Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $500. $2 fee per transaction +  no additional fee. Expected=$502 Passed, Actual=$502
-3 .Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $1001. $2 fee per transaction + 1% additional fee. Expected=$1013.01 Passed, Actual=$1013.01
-4. Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $2500. $2 fee per transaction + 1% additional fee. Expected=$2527 Passed, Actual=$2527
+1.Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $1001. $2 fee per transaction + 1% additional fee. Expected=$1013.01 Passed, Actual=$1013.01
+2. Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $2500. $2 fee per transaction + 1% additional fee. Expected=$2527 Passed, Actual=$2527.
+3.Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $1. $2 fee per transaction +  no additional fee. Expected=$3 Passed, Actual=$3
+4. Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $500. $2 fee per transaction +  no additional fee. Expected=$502 Passed, Actual=$502.
 5. Account type "Saving", Maximum transfer limit $5000, Express transfer, transfer $1. $5 fee per transaction + 2% additional fee. Expected=$6.02 Failed, Actual=$6
 6. Account type "Saving", Maximum transfer limit $5000, Express transfer, transfer $500. $5 fee per transaction + 2% additional fee. Expected=$515 Failed, Actual=$505
 7. Account type "Saving", Maximum transfer limit $5000, Express transfer, transfer $1001. $5 fee per transaction + 3% additional fee. Expected=$1036.03 Failed, Actual=$1026.02
@@ -27,24 +27,24 @@ Valid:
 ****
 
 Invalid:
-1. Account type "Saving", Standard transfer, transfer $6000. Expected = Limit Error.
-2. Account type "Saving", Express transfer, transfer $7000. Expected = Limit Error.
-3. Account type "Saving", International transfer, transfer $8000. Expected = Limit Error.
-4. Account type "Crrent", Standard transfer, transfer $12000. Expected = Limit Error.
-5. Account type "Crrent", Express transfer, transfer $13000. Expected = Limit Error.
-6. Account type "Crrent", International transfer, transfer $500 or More. Expected = Limit Error.
-7. Account type "Saving", Standard transfer, transfer $0. Expected = Limit Error.
-8. Account type "Saving", Standard transfer, transfer $-1. Expected = Limit Error.
-9. Account type "Saving", Express transfer, transfer $0. Expected = Limit Error.
-10. Account type "Saving", Express transfer, transfer $-1. Expected = Limit Error.
-11. Account type "Saving", International transfer, transfer $0. Expected = Limit Error.
-12. Account type "Saving", International transfer, transfer $-1. Expected = Limit Error.
-13. Account type "Crrent", Standard transfer, transfer $0. Expected = Limit Error.
-14. Account type "Crrent", Standard transfer, transfer $-1. Expected = Limit Error.
-15. Account type "Crrent", Express transfer, transfer $0. Expected = Limit Error.
-16. Account type "Crrent", Express transfer, transfer $-1. Expected = Limit Error.
-17. Account type "Crrent", International transfer, transfer $0. Expected = Limit Error.
-18. Account type "Crrent", International transfer, transfer $-1. Expected = Limit Error.
+1.Account type "Crrent", Standard transfer, transfer $12000. Expected = Limit Error.
+2.Account type "Crrent", Express transfer, transfer $13000. Expected = Limit Error.
+3.Account type "Crrent", International transfer, transfer $500 or More. Expected = Limit Error.
+4.Account type "Saving", Standard transfer, transfer $6000. Expected = Limit Error.
+5.Account type "Saving", Express transfer, transfer $7000. Expected = Limit Error.
+6.Account type "Saving", International transfer, transfer $8000. Expected = Limit Error.
+7.Account type "Saving", Standard transfer, transfer $0. Expected = Limit Error.
+8.Account type "Saving", Standard transfer, transfer $-1. Expected = Limit Error.
+9.Account type "Saving", Express transfer, transfer $0. Expected = Limit Error.
+10.Account type "Saving", Express transfer, transfer $-1. Expected = Limit Error.
+11.Account type "Saving", International transfer, transfer $0. Expected = Limit Error.
+12.Account type "Saving", International transfer, transfer $-1. Expected = Limit Error.
+13.Account type "Crrent", Standard transfer, transfer $0. Expected = Limit Error.
+14.Account type "Crrent", Standard transfer, transfer $-1. Expected = Limit Error.
+15.Account type "Crrent", Express transfer, transfer $0. Expected = Limit Error.
+16.Account type "Crrent", Express transfer, transfer $-1. Expected = Limit Error.
+17.Account type "Crrent", International transfer, transfer $0. Expected = Limit Error.
+18.Account type "Crrent", International transfer, transfer $-1. Expected = Limit Error.
 
 
 
