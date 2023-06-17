@@ -1,7 +1,9 @@
+Assignment 2.
 Project: Fund Transfer Application
 Allow users to transfer funds between their accounts within the same bank.
-Assignment 2.
+
 Test Case:
+
 Valid:
 1.Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $1001. $2 fee per transaction + 1% additional fee. Expected=$1013.01 Passed, Actual=$1013.01
 2. Account type "Saving", Maximum transfer limit $5000, Standard transfer, transfer $2500. $2 fee per transaction + 1% additional fee. Expected=$2527 Passed, Actual=$2527.
